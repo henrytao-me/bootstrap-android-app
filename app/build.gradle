@@ -100,4 +100,11 @@ dependencies {
   }
 
   compile rootProject.ext.dependencies["com.jakewharton:butterknife"]
+
+  testCompile rootProject.ext.dependencies["junit:junit"]
+  testCompile rootProject.ext.dependencies["org.hamcrest:hamcrest-core"]
+  testCompile rootProject.ext.dependencies["org.hamcrest:hamcrest-library"]
+  testCompile rootProject.ext.dependencies["org.hamcrest:hamcrest-integration"]
+  testCompile rootProject.ext.dependencies["org.robolectric:robolectric"]
+  testCompile rootProject.ext.dependencies["org.robolectric:shadows-support-v4"]
 }

@@ -45,10 +45,13 @@ android {
 
   signingConfigs {
     debug {
-      // TODO: add signing configuration for debug build
+      storeFile file(rootProject.ext.signing["storeFile"])
+      storePassword rootProject.ext.signing["storePassword"]
+      keyAlias rootProject.ext.signing["keyAlias"]
+      keyPassword rootProject.ext.signing["keyPassword"]
     }
     release {
-      // TODO: add signing configuration for release build
+      // NOTE: add signing configuration for release build in `gradle.properties` or `gradlew environment`. Check out `signing.gradle`
     }
   }
 
@@ -73,6 +76,8 @@ android {
   }
 }
 
+apply from: "signing.gradle"
+
 retrolambda {
   jvmArgs "-noverify"
 }
@@ -84,10 +89,13 @@ dependencies {
   compile rootProject.ext.dependencies["com.android.support:cardview-v7"]
   compile rootProject.ext.dependencies["com.android.support:recyclerview-v7"]
 
+  compile(rootProject.ext.dependencies["me.henrytao:mdcore"]) {
+    exclude group: "com.android.support"
+  }
   compile(rootProject.ext.dependencies["me.henrytao:recyclerview"]) {
     exclude group: "com.android.support"
   }
-  compile(rootProject.ext.dependencies["me.henrytao:mdcore"]) {
+  compile(rootProject.ext.dependencies["me.henrytao:smooth-app-bar-layout"]) {
     exclude group: "com.android.support"
   }
 

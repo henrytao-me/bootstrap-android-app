@@ -30,28 +30,11 @@ ext {
       versionName      : "0.0.1"
   ]
 
-  bintray = [
-      bintrayRepo       : "maven",
-      bintrayName       : "bootrap-android-library",
-
-      publishedGroupId  : "me.henrytao",
-      libraryName       : "Bootstrap Android Library",
-      artifact          : "bootrap-android-library",
-
-      libraryDescription: "Bootstrapping android library",
-
-      siteUrl           : "https://github.com/henrytao-me/bootstrap-android-library",
-      gitUrl            : "https://github.com/henrytao-me/bootstrap-android-library.git",
-
-      libraryVersion    : rootProject.ext.android.versionName,
-
-      developerId       : "henrytao",
-      developerName     : "Henry Tao",
-      developerEmail    : "hi@henrytao.me",
-
-      licenseName       : "The Apache Software License, Version 2.0",
-      licenseUrl        : "http://www.apache.org/licenses/LICENSE-2.0.txt",
-      allLicenses       : ["Apache-2.0"]
+  signing = [
+      storeFile    : "../signing/develop.jks",
+      storePassword: "develop",
+      keyAlias     : "develop",
+      keyPassword  : "develop"
   ]
 
   dependencies = [
@@ -60,8 +43,9 @@ ext {
       "com.android.support:cardview-v7"    : "com.android.support:cardview-v7:23.1.0",
       "com.android.support:recyclerview-v7": "com.android.support:recyclerview-v7:23.1.0",
 
-      "me.henrytao:recyclerview"           : "me.henrytao:recyclerview:1.2.0",
-      "me.henrytao:mdcore"                 : "me.henrytao:mdcore:1.2.0",
+      "me.henrytao:mdcore"                 : "me.henrytao:mdcore:1.9.1",
+      "me.henrytao:recyclerview"           : "me.henrytao:recyclerview:1.3.0",
+      "me.henrytao:smooth-app-bar-layout"  : "me.henrytao:smooth-app-bar-layout:0.2.0",
 
       "com.jakewharton:butterknife"        : "com.jakewharton:butterknife:7.0.1"
   ]

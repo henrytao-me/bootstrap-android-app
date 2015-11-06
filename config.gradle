@@ -43,7 +43,7 @@ ext {
       "com.android.support:cardview-v7"    : "com.android.support:cardview-v7:23.1.0",
       "com.android.support:recyclerview-v7": "com.android.support:recyclerview-v7:23.1.0",
 
-      "me.henrytao:mdcore"                 : "me.henrytao:mdcore:1.9.1",
+      "me.henrytao:mdcore"                 : "me.henrytao:mdcore:1.9.9",
       "me.henrytao:recyclerview"           : "me.henrytao:recyclerview:1.3.0",
       "me.henrytao:smooth-app-bar-layout"  : "me.henrytao:smooth-app-bar-layout:0.2.0",
 

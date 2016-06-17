@@ -27,7 +27,7 @@ ext {
       minSdkVersion    : 11,
       targetSdkVersion : 23,
       versionCode      : 1,
-      versionName      : "0.0.1"
+      versionName      : "1.0.0"
   ]
 
   signing = [
@@ -38,16 +38,15 @@ ext {
   ]
 
   dependencies = [
-      "com.android.support:design"         : "com.android.support:design:23.2.1",
-      "com.android.support:appcompat-v7"   : "com.android.support:appcompat-v7:23.2.1",
-      "com.android.support:cardview-v7"    : "com.android.support:cardview-v7:23.2.1",
-      "com.android.support:recyclerview-v7": "com.android.support:recyclerview-v7:23.2.1",
+      "com.android.support:design"         : "com.android.support:design:23.3.0",
+      "com.android.support:appcompat-v7"   : "com.android.support:appcompat-v7:23.3.0",
+      "com.android.support:cardview-v7"    : "com.android.support:cardview-v7:23.3.0",
+      "com.android.support:recyclerview-v7": "com.android.support:recyclerview-v7:23.3.0",
 
-      "me.henrytao:mdcore"                 : "me.henrytao:mdcore:23.2.1.2",
-      "me.henrytao:recyclerview"           : "me.henrytao:recyclerview:23.2.1",
-      "me.henrytao:smooth-app-bar-layout"  : "me.henrytao:smooth-app-bar-layout:23.2.1",
-
-      "com.jakewharton:butterknife"        : "com.jakewharton:butterknife:7.0.1",
+      "me.henrytao:mdcore"                 : "me.henrytao:mdcore:3.0.2",
+      "me.henrytao:mvvm-life-cycle"        : "me.henrytao:mvvm-life-cycle:2.3.0",
+      "me.henrytao:recyclerview"           : "me.henrytao:recyclerview:3.0.7",
+      "me.henrytao:smooth-app-bar-layout"  : "me.henrytao:smooth-app-bar-layout:3.0.0",
 
       "junit:junit"                        : "junit:junit:4.12",
       "org.hamcrest:hamcrest-core"         : "org.hamcrest:hamcrest-core:1.3",

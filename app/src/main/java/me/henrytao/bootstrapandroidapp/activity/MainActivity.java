@@ -17,18 +17,13 @@
 package me.henrytao.bootstrapandroidapp.activity;
 
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
 import me.henrytao.bootstrapandroidapp.R;
 
-public class MainActivity extends BaseActivity {
-
-  @Bind(R.id.toolbar)
-  Toolbar vToolbar;
+public class MainActivity extends AppCompatActivity {
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
@@ -45,7 +40,5 @@ public class MainActivity extends BaseActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    ButterKnife.bind(this);
-    setSupportActionBar(vToolbar);
   }
 }

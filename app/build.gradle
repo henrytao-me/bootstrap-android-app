@@ -16,6 +16,7 @@
 
 apply plugin: "com.android.application"
 apply plugin: "me.tatarka.retrolambda"
+apply from: "../jacoco.gradle"
 
 android {
   compileOptions {
@@ -92,14 +93,15 @@ dependencies {
   compile(rootProject.ext.dependencies["me.henrytao:mdcore"]) {
     exclude group: "com.android.support"
   }
+  compile(rootProject.ext.dependencies["me.henrytao:mvvm-life-cycle"]) {
+    exclude group: "com.android.support"
+  }
   compile(rootProject.ext.dependencies["me.henrytao:recyclerview"]) {
     exclude group: "com.android.support"
   }
   compile(rootProject.ext.dependencies["me.henrytao:smooth-app-bar-layout"]) {
     exclude group: "com.android.support"
   }
-
-  compile rootProject.ext.dependencies["com.jakewharton:butterknife"]
 
   testCompile rootProject.ext.dependencies["junit:junit"]
   testCompile rootProject.ext.dependencies["org.hamcrest:hamcrest-core"]

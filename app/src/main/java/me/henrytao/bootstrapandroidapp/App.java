@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 "Henry Tao <hi@henrytao.me>"
+ * Copyright 2016 "Henry Tao <hi@henrytao.me>"
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +14,17 @@
  * limitations under the License.
  */
 
-package me.henrytao.bootstrapandroidapp.activity;
+package me.henrytao.bootstrapandroidapp;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Application;
 
 /**
- * Created by henrytao on 10/11/15.
+ * Created by henrytao on 6/17/16.
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public class App extends Application {
 
+  @Override
+  public void onCreate() {
+    super.onCreate();
+  }
 }

@@ -30,6 +30,11 @@ ext {
       versionName      : "1.0.0"
   ]
 
+  versioning = [
+      versionMajor: 0,
+      versionMinor: 1
+  ]
+
   signing = [
       storeFile    : "../signing/develop.jks",
       storePassword: "develop",

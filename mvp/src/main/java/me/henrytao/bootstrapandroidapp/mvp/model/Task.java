@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 "Henry Tao <hi@henrytao.me>"
+ * Copyright 2016 "Henry Tao <hi@henrytao.me>"
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,4 +14,34 @@
  * limitations under the License.
  */
 
-include ':app', ':mvp'
+package me.henrytao.bootstrapandroidapp.mvp.model;
+
+/**
+ * Created by henrytao on 6/18/16.
+ */
+public class Task {
+
+  private String mDescription;
+
+  private String mId;
+
+  private String mTitle;
+
+  public Task(String id, String title, String description) {
+    mId = id;
+    mTitle = title;
+    mDescription = description;
+  }
+
+  public String getDescription() {
+    return mDescription;
+  }
+
+  public String getId() {
+    return mId;
+  }
+
+  public String getTitle() {
+    return mTitle;
+  }
+}

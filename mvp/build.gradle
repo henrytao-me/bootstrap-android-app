@@ -102,9 +102,6 @@ dependencies {
   compile(rootProject.ext.dependencies["me.henrytao:mdcore"]) {
     exclude group: "com.android.support"
   }
-  compile(rootProject.ext.dependencies["me.henrytao:mvvm-life-cycle"]) {
-    exclude group: "com.android.support"
-  }
   compile(rootProject.ext.dependencies["me.henrytao:recyclerview"]) {
     exclude group: "com.android.support"
   }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 "Henry Tao <hi@henrytao.me>"
+ * Copyright 2016 "Henry Tao <hi@henrytao.me>"
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,4 +14,14 @@
  * limitations under the License.
  */
 
-include ':app', ':mvp'
+package me.henrytao.bootstrapandroidapp.mvp.ui.base;
+
+/**
+ * Created by henrytao on 6/18/16.
+ */
+public interface BasePresenter {
+
+  void start();
+
+  void stop();
+}

@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 "Henry Tao <hi@henrytao.me>"
+ * Copyright 2016 "Henry Tao <hi@henrytao.me>"
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,4 +14,19 @@
  * limitations under the License.
  */
 
-include ':app', ':mvp', ':mvvm'
+package me.henrytao.bootstrapandroidapp.mvvm;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+/**
+ * To work on unit tests, switch the Test Artifact in the Build Variants view.
+ */
+public class ExampleUnitTest {
+
+  @Test
+  public void addition_isCorrect() throws Exception {
+    assertEquals(4, 2 + 2);
+  }
+}

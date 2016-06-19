@@ -86,7 +86,6 @@ android {
 }
 
 apply from: "signing.gradle"
-apply from: "versioning.gradle"
 
 retrolambda {
   jvmArgs "-noverify"

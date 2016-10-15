@@ -21,11 +21,11 @@ ext {
   ]
 
   android = [
-      compileSdkVersion: 23,
-      buildToolsVersion: "23.0.2",
+      compileSdkVersion: 24,
+      buildToolsVersion: "24.0.2",
       applicationId    : "me.henrytao.bootstrapandroidapp",
       minSdkVersion    : 11,
-      targetSdkVersion : 23,
+      targetSdkVersion : 24,
       versionCode      : 1,
       versionName      : "1.0.0"
   ]
@@ -43,22 +43,33 @@ ext {
   ]
 
   dependencies = [
-      "com.android.support:design"         : "com.android.support:design:23.3.0",
-      "com.android.support:appcompat-v7"   : "com.android.support:appcompat-v7:23.3.0",
-      "com.android.support:cardview-v7"    : "com.android.support:cardview-v7:23.3.0",
-      "com.android.support:recyclerview-v7": "com.android.support:recyclerview-v7:23.3.0",
+      "com.android.support:design"           : "com.android.support:design:24.2.1",
+      "com.android.support:appcompat-v7"     : "com.android.support:appcompat-v7:24.2.1",
+      "com.android.support:cardview-v7"      : "com.android.support:cardview-v7:24.2.1",
+      "com.android.support:recyclerview-v7"  : "com.android.support:recyclerview-v7:24.2.1",
 
-      "me.henrytao:mdcore"                 : "me.henrytao:mdcore:3.0.2",
-      "me.henrytao:mvvm-life-cycle"        : "me.henrytao:mvvm-life-cycle:2.3.0",
-      "me.henrytao:recyclerview"           : "me.henrytao:recyclerview:3.0.7",
-      "me.henrytao:smooth-app-bar-layout"  : "me.henrytao:smooth-app-bar-layout:3.0.0",
+      "com.google.code.gson:gson"            : "com.google.code.gson:gson:2.7",
+      "com.google.dagger:dagger"             : "com.google.dagger:dagger:2.7",
+      "com.google.dagger:dagger-compiler"    : "com.google.dagger:dagger-compiler:2.7",
 
-      "junit:junit"                        : "junit:junit:4.12",
-      "org.hamcrest:hamcrest-core"         : "org.hamcrest:hamcrest-core:1.3",
-      "org.hamcrest:hamcrest-library"      : "org.hamcrest:hamcrest-library:1.3",
-      "org.hamcrest:hamcrest-integration"  : "org.hamcrest:hamcrest-integration:1.3",
-      "org.robolectric:robolectric"        : "org.robolectric:robolectric:3.0",
-      "org.robolectric:shadows-core"       : "org.robolectric:shadows-core:3.0",
-      "org.robolectric:shadows-support-v4" : "org.robolectric:shadows-support-v4:3.0"
+      "com.squareup.retrofit2:adapter-rxjava": "com.squareup.retrofit2:adapter-rxjava:2.1.0",
+      "com.squareup.retrofit2:converter-gson": "com.squareup.retrofit2:converter-gson:2.1.0",
+      "com.squareup.retrofit2:retrofit"      : "com.squareup.retrofit2:retrofit:2.1.0",
+
+      "io.reactivex:rxandroid"               : "io.reactivex:rxandroid:1.2.1",
+      "io.reactivex:rxjava"                  : "io.reactivex:rxjava:1.2.1",
+
+      "me.henrytao:mdcore"                   : "me.henrytao:mdcore:3.3.6",
+      "me.henrytao:mvvm-life-cycle"          : "me.henrytao:mvvm-life-cycle:2.7.7",
+      "me.henrytao:recycler-pager-adapter"   : "me.henrytao:recycler-pager-adapter:2.1.0",
+      "me.henrytao:recyclerview"             : "me.henrytao:recyclerview:3.1.1",
+      "me.henrytao:rx-shared-preferences"    : "me.henrytao:rx-shared-preferences:1.4.1",
+      "me.henrytao:smooth-app-bar-layout"    : "me.henrytao:smooth-app-bar-layout:24.2.1.0",
+
+      "junit:junit"                          : "junit:junit:4.12",
+      "org.mockito:mockito-core"             : "org.mockito:mockito-core:2.2.1",
+      "org.robolectric:robolectric"          : "org.robolectric:robolectric:3.1.2",
+      "org.robolectric:shadows-core"         : "org.robolectric:shadows-core:3.1.2",
+      "org.robolectric:shadows-support-v4"   : "org.robolectric:shadows-support-v4:3.1.2"
   ]
 }

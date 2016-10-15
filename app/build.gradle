@@ -15,10 +15,19 @@
  */
 
 apply plugin: "com.android.application"
+apply plugin: "com.neenbedankt.android-apt"
 apply plugin: "me.tatarka.retrolambda"
 apply from: "../jacoco.gradle"
 
 android {
+  dataBinding {
+    enabled = true
+  }
+
+  defaultConfig {
+    vectorDrawables.useSupportLibrary = true
+  }
+
   compileOptions {
     sourceCompatibility rootProject.ext.java.sourceCompatibility
     targetCompatibility rootProject.ext.java.targetCompatibility
@@ -86,18 +95,32 @@ retrolambda {
 
 dependencies {
   compile fileTree(dir: "libs", include: ["*.jar"])
+
   compile rootProject.ext.dependencies["com.android.support:design"]
   compile rootProject.ext.dependencies["com.android.support:appcompat-v7"]
   compile rootProject.ext.dependencies["com.android.support:cardview-v7"]
   compile rootProject.ext.dependencies["com.android.support:recyclerview-v7"]
+
+  compile rootProject.ext.dependencies["com.google.dagger:dagger"]
+  apt rootProject.ext.dependencies["com.google.dagger:dagger-compiler"]
+
+  compile rootProject.ext.dependencies["io.reactivex:rxjava"]
+  compile rootProject.ext.dependencies["io.reactivex:rxandroid"]
 
   compile(rootProject.ext.dependencies["me.henrytao:mdcore"]) {
     exclude group: "com.android.support"
   }
   compile(rootProject.ext.dependencies["me.henrytao:mvvm-life-cycle"]) {
     exclude group: "com.android.support"
+    exclude group: "io.reactivex"
+  }
+  compile(rootProject.ext.dependencies["me.henrytao:recycler-pager-adapter"]) {
+    exclude group: "com.android.support"
   }
   compile(rootProject.ext.dependencies["me.henrytao:recyclerview"]) {
+    exclude group: "com.android.support"
+  }
+  compile(rootProject.ext.dependencies["me.henrytao:rx-shared-preferences"]) {
     exclude group: "com.android.support"
   }
   compile(rootProject.ext.dependencies["me.henrytao:smooth-app-bar-layout"]) {
@@ -105,9 +128,7 @@ dependencies {
   }
 
   testCompile rootProject.ext.dependencies["junit:junit"]
-  testCompile rootProject.ext.dependencies["org.hamcrest:hamcrest-core"]
-  testCompile rootProject.ext.dependencies["org.hamcrest:hamcrest-library"]
-  testCompile rootProject.ext.dependencies["org.hamcrest:hamcrest-integration"]
+  testCompile rootProject.ext.dependencies["org.mockito:mockito-core"]
   testCompile rootProject.ext.dependencies["org.robolectric:robolectric"]
   testCompile rootProject.ext.dependencies["org.robolectric:shadows-support-v4"]
 }
